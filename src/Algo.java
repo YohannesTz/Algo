@@ -176,4 +176,54 @@ public class Algo {
         }
         return items[items.length - 1];
     }
+
+    public String toString() {
+        if (items == null) {
+            return "null";
+        } else {
+            int iMax = items.length - 1;
+            if (iMax == -1) {
+                return "[]";
+            } else {
+                StringBuilder b = new StringBuilder();
+                b.append('[');
+                int i = 0;
+
+                while(true) {
+                    b.append(items[i]);
+                    if (i == iMax) {
+                        return b.append(']').toString();
+                    }
+
+                    b.append(", ");
+                    ++i;
+                }
+            }
+        }
+    }
+
+    public static String toString(int[] a) {
+        if (a == null) {
+            return "null";
+        } else {
+            int iMax = a.length - 1;
+            if (iMax == -1) {
+                return "[]";
+            } else {
+                StringBuilder b = new StringBuilder();
+                b.append('[');
+                int i = 0;
+
+                while(true) {
+                    b.append(a[i]);
+                    if (i == iMax) {
+                        return b.append(']').toString();
+                    }
+
+                    b.append(", ");
+                    ++i;
+                }
+            }
+        }
+    }
 }

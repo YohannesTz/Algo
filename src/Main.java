@@ -9,7 +9,7 @@ public class Main {
         algo.insert(50);
         algo.print();
         System.out.println("-----------------");
-        System.out.println(Arrays.toString(algo.bubbleSortAsc()));
+        System.out.println(Algo.toString(algo.bubbleSortAsc()));
         System.out.println(algo.closestToZero());
         System.out.println(algo.closestTo(75));
         System.out.println("-------------------");
